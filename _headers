@@ -1,0 +1,18 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; img-src 'self' data: https://mc.yandex.ru https://*.yandex.ru https://*.yandex.net https://*.google-analytics.com https://*.googletagmanager.com; script-src 'self' https://mc.yandex.ru https://*.yandex.ru https://*.yandex.net https://www.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com; connect-src 'self' https://mc.yandex.ru https://*.yandex.ru https://*.yandex.net https://*.google-analytics.com https://*.googletagmanager.com https://*.googleadservices.com https://www.google.com; style-src 'self'; font-src 'self' data:; form-action 'self' https://t.me https://vk.com; frame-src https://mc.yandex.ru https://*.yandex.ru
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=2592000
+
+/css/*
+  Cache-Control: public, max-age=604800
+
+/js/*
+  Cache-Control: public, max-age=604800
