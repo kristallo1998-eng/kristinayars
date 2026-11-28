@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оплата заказа — KRISTINAYARS</title>
+  <meta name="description" content="Оформить заказ и оплатить одежду KRISTINAYARS: выберите модель, размер и рост, посчитайте сумму и оплатите по QR через СБП или переводом на счёт.">
+  <meta name="theme-color" content="#2E2D2B">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.kristinayars.ru/order/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="KRISTINAYARS">
+  <meta property="og:title" content="Оплата заказа — KRISTINAYARS">
+  <meta property="og:description" content="Оплата заказа — KRISTINAYARS">
+  <meta property="og:url" content="https://www.kristinayars.ru/order/">
+  <meta property="og:image" content="https://www.kristinayars.ru/images/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Оплата заказа — KRISTINAYARS">
+  <meta name="twitter:description" content="Оформить заказ и оплатить одежду KRISTINAYARS: выберите модель, размер и рост, посчитайте сумму и оплатите по QR через СБП или переводом на счёт.">
+  <meta name="twitter:image" content="https://www.kristinayars.ru/images/og.jpg">
+  <link rel="icon" href="../images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../css/style.css?v=72">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="nav">
+    <a class="nav-logo" href="../">KRISTINAYARS</a>
+    <nav class="nav-links">
+      <a href="../#catalog">Каталог</a>
+      <a href="../#how">Как купить</a>
+      <a href="../#delivery">Доставка</a>
+      <a href="../#returns">Возврат</a>
+      <a href="../faq">Вопросы</a>
+      <a href="../blog/">Блог</a>
+      <a href="../#about">О бренде</a>
+      <a href="../#contacts">Контакты</a>
+    </nav>
+    <button class="nav-burger" id="burger" aria-label="Меню">☰</button>
+  </header>
+
+  <main class="pdp-main post" id="main">
+    <nav class="crumbs">
+      <a href="../">Главная</a>
+      <span>/</span>
+      <span class="crumbs-now">Оплата заказа</span>
+    </nav>
+
+    <article class="post-body">
+      <h1 class="pdp-name">Оплата заказа</h1>
+      <p class="post-meta">Одежда на заказ · Санкт-Петербург · доставка по России</p>
+
+      <div class="offer-sum">
+        <div class="card">
+          <h3>Как это работает</h3>
+          <ul>
+            <li>1. Выберите модель, размер и рост</li>
+            <li>2. Оплатите по QR или переводом</li>
+            <li>3. Пришлите заказ в мессенджер</li>
+          </ul>
+        </div>
+        <div class="card"><h3>Под заказ</h3><p>Все изделия шьём после оформления заказа — изготовление 2–3 рабочих дня</p></div>
+        <div class="card"><h3>Индивидуальный пошив</h3><p>По вашим меркам — +2 000 ₽ к цене изделия</p></div>
+        <div class="card">
+          <h3>Доставка</h3>
+          <ul>
+            <li>СДЭК, Почта России, Яндекс Доставка — 500 ₽</li>
+            <li>Яндекс-курьер по СПб и ЛО — за счёт покупателя</li>
+            <li>Самовывоз — бесплатно</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="post-h2" id="form">Ваш заказ</h2>
+      <div class="order-page">
+        <div class="order-page-form">
+          <div class="op-list-head">
+            <h3 class="op-list-title">Состав заказа</h3>
+            <button type="button" class="cart-item-del" id="op-clear" hidden>Очистить корзину</button>
+          </div>
+          <div id="op-items" class="op-items"></div>
+          <div class="op-contacts" id="op-contacts">
+            <div class="order-row">
+              <label class="sel"><span>Имя</span>
+                <input type="text" id="op-name" placeholder="Как к вам обращаться" autocomplete="name">
+              </label>
+              <label class="sel"><span>Телефон или Telegram</span>
+                <input type="text" id="op-contact" value="+7 " placeholder="+7 (___) ___-__-__" autocomplete="tel">
+              </label>
+            </div>
+            <label class="sel"><span>Город доставки</span>
+              <input type="text" id="op-city" placeholder="Санкт-Петербург" autocomplete="address-level2">
+            </label>
+
+            <div class="op-delivery">
+              <span class="op-delivery-label">Способ доставки</span>
+              <label class="op-delivery-opt">
+                <input type="radio" name="op-delivery" value="carrier" checked>
+                <span class="op-delivery-txt">
+                  <b>СДЭК, Почта России, Яндекс Доставка</b>
+                  <i>500 ₽ — добавляется к сумме заказа</i>
+                </span>
+              </label>
+              <label class="op-delivery-opt">
+                <input type="radio" name="op-delivery" value="courier">
+                <span class="op-delivery-txt">
+                  <b>Яндекс-курьер по СПб и Ленинградской области</b>
+                  <i>оплачивается отдельно покупателем</i>
+                </span>
+              </label>
+              <label class="op-delivery-opt">
+                <input type="radio" name="op-delivery" value="pickup">
+                <span class="op-delivery-txt">
+                  <b>Самовывоз</b>
+                  <i>бесплатно — Санкт-Петербург, пос. Парголово, ул. Тихоокеанская, д. 1 к. 2</i>
+                </span>
+              </label>
+            </div>
+
+            <label class="sel"><span>Адрес доставки</span>
+              <input type="text" id="op-address" placeholder="Ваш адрес или адрес пункта выдачи" autocomplete="street-address">
+              <small class="sel-hint" id="op-address-hint">Укажите адрес, куда привезти заказ, или адрес пункта выдачи, в котором получите его.</small>
+            </label>
+
+            <div class="op-total">К оплате: <b id="op-sum">—</b></div>
+            <p class="op-delivery-note" id="op-delivery-note"></p>
+            <div class="op-actions">
+              <a class="btn btn-outline op-tg" id="op-send-tg" target="_blank" rel="noopener noreferrer">Отправить заказ в Telegram</a>
+              <a class="btn btn-outline op-vk" id="op-send-vk" target="_blank" rel="noopener noreferrer">Отправить заказ в VK</a>
+            </div>
+            <p class="order-hint">Оплата — после подтверждения заказа: вы получите сумму и назначение платежа, QR-код и реквизиты справа. Чек самозанятого формируется сразу после поступления оплаты.</p>
+          </div>
+        </div>
+
+        <aside class="pay-box">
+          <h3 class="pdp-desc-h">Как оплатить</h3>
+          <p class="pay-lead">Отсканируйте QR-код в приложении банка — откроется оплата по реквизитам, сумму вводите сами. Или переведите по реквизитам вручную.</p>
+          <div class="pay-qr">
+            <img src="../images/pay/qr-sbp.jpg" alt="QR-код для оплаты заказа KRISTINAYARS через СБП" width="600" height="600">
+            <span class="pay-qr-hint">QR-код СБП → оплата на счёт KRISTINAYARS</span>
+          </div>
+          <div class="offer-req">
+            <div><span>Получатель</span><b>Черняк Кристина Олеговна</b></div>
+            <div><span>ИНН</span><b>180805227872</b></div>
+            <div><span>Банк</span><b>СЕВЕРО-ЗАПАДНЫЙ БАНК ПАО СБЕРБАНК</b></div>
+            <div><span>БИК</span><b>044030653</b></div>
+            <div><span>Корр. счёт</span><b>30101810500000000653</b></div>
+            <div><span>Расчётный счёт</span><b>40817810255868823475</b></div>
+          </div>
+          <p class="pay-note">Назначение платежа: <b>Оплата заказа KRISTINAYARS</b>, номер заказа укажите в комментарии к переводу. Всё переводится на счёт самозанятого — без посредников и комиссий.</p>
+        </aside>
+      </div>
+
+      <h2 class="post-h2" id="steps">Что будет дальше</h2>
+      <ol class="post-list">
+        <li>Вы выбираете модель, размер и рост и отправляете заказ в Telegram или VK.</li>
+        <li>Мы подтверждаем цвет и детали, присылаем фото/уточнения и итоговую сумму с учётом пошива и доставки.</li>
+        <li>Вы оплачиваете по QR или переводом на счёт (или 50% предоплатой, остаток при получении).</li>
+        <li>Шьём 2–3 рабочих дня, отправляем или ждём вас в Парголово, выдаём чек самозанятого.</li>
+      </ol>
+
+      <h2 class="post-h2" id="faq">Частые вопросы об оплате</h2>
+      <div class="faq">
+        <div class="faq-item"><h3 class="faq-q">Можно ли оплатить картой?</h3>
+          <p class="faq-a">Оплата картой через сайт не проводится: наш сайт не принимает и не хранит данные карт. Оплата идёт по QR через СБП или переводом на расчётный счёт — это быстрее и без комиссий.</p></div>
+        <div class="faq-item"><h3 class="faq-q">Нужна ли предоплата?</h3>
+          <p class="faq-a">Все изделия шьём под заказ. Обычно — 50% предоплаты при подтверждении заказа, остаток при передаче изделия (условия подтверждаем в сообщении).</p></div>
+        <div class="faq-item"><h3 class="faq-q">Безопасна ли оплата по QR?</h3>
+          <p class="faq-a">Да. QR ведёт на страницу вашего банка, реквизиты получателя совпадают с указанными на сайте, а чек самозанятого формируется сразу после зачисления. Никто не получает доступ к вашим деньгам «через посредника».</p></div>
+        <div class="faq-item"><h3 class="faq-q">Я оплатил, а заказа нет — что делать?</h3>
+          <p class="faq-a">Пришлите чек или сообщение об оплате в мессенджер, на который вы оформили заказ: мы подтвердим заказ в течение рабочего дня и сразу сформируем чек самозанятого.</p></div>
+      </div>
+
+      <p class="note">Вопросы по заказу: <a href="https://t.me/KRISTINAYARS_bot">Telegram</a> ·
+        <a href="https://vk.com/kristinayars">VK</a> · +7 (999) 247-39-52 · kristinayars@bk.ru.
+        Условия продажи — в <a href="../offer/">публичной оферте</a>.</p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>KRISTINAYARS · EST 2018 · Санкт-Петербург</p>
+    <p><a href="https://vk.com/kristinayars" target="_blank" rel="noopener noreferrer">VK</a> ·
+       <a href="https://t.me/kristinayarss1" target="_blank" rel="noopener noreferrer">Telegram-канал</a> ·
+       <a href="https://dzen.ru/kristinayars" target="_blank" rel="noopener noreferrer">Дзен</a> ·
+       <a href="https://t.me/KRISTINAYARS_bot" target="_blank" rel="noopener noreferrer">Бот</a> ·
+       <a href="https://ru.pinterest.com/KRISTINAYARS1/" target="_blank" rel="noopener noreferrer">Pinterest</a></p>
+    <p class="footer-links">
+      <a href="../#catalog">Каталог</a> ·
+      <a href="../blog/">Блог</a> ·
+      <a href="../faq">Вопросы и ответы</a> ·
+      <a href="../sitemap.xml">Карта сайта</a>
+    </p>
+  </footer>
+
+  <script src="../js/data.js?v=14"></script>
+  <script src="../js/cart.js?v=8"></script>
+  <script src="../js/pay.js?v=8"></script>
+  <script src="../js/brand.js?v=3"></script>
+  <script src="../js/analytics.js?v=4"></script>
+  <script src="../js/ui.js?v=10"></script>
+  <script src="../js/nav.js?v=1"></script>
+<!-- build 2026-11-28 06:27:01 -->
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "KRISTINAYARS — авторский пошив одежды",
+  "short_name": "KRISTINAYARS",
+  "description": "Спортивные костюмы, худи, верхняя одежда и классика. Санкт-Петербург.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#2E2D2B",
+  "theme_color": "#2E2D2B",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "/images/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
